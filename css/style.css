@@ -444,14 +444,14 @@ a:focus {
 
 .section-title h2, .section-title-white h2 {
   font-family: "Great Vibes", cursive;
-  background-color: rgba(94, 154, 142, 0.1);
+  background-color: rgba(136, 155, 174, 0.5);
   font-size: 46px;
   font-size: 2.55556rem;
-  color: #848383;
+  color: #fff;
   margin: 59px 0 0;
   padding: 10px 25px 5px;
-  border-top: 2px solid rgba(94, 154, 142, 0.1);
-  border-bottom: 2px solid rgba(94, 154, 142, 0.1);
+  border-top: 2px solid rgba(136, 155, 174, 0.4);
+  border-bottom: 2px solid rgba(136, 155, 174, 0.4);
   display: inline-block;
   text-transform: capitalize;
   letter-spacing: 3px;
@@ -2930,6 +2930,16 @@ a:focus {
   }
 }
 
+.inportant-people-section .tablist-heading {
+  padding: 16px 0;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .inportant-people-section .tablist ul {
   overflow: hidden;
   display: inline-block;
@@ -2974,7 +2984,7 @@ a:focus {
 }
 
 .inportant-people-section .tab-content .grid {
-  width: 33.33%;
+  width: 25%;
   float: left;
   padding: 0 15px 0;
 }
@@ -2998,9 +3008,11 @@ a:focus {
 }
 
 @media screen and (min-width: 992px) {
-  .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(4),
   .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(5),
-  .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(6) {
+  .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(6),
+  .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(7),
+  .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(8)
+  {
     margin-top: 30px;
   }
 }
@@ -3028,6 +3040,7 @@ a:focus {
 
 .inportant-people-section .grid .img-holder {
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .inportant-people-section .grid .img-holder img {
@@ -3041,23 +3054,24 @@ a:focus {
   -o-filter: grayscale(50%);
   -ms-filter: grayscale(50%);
   filter: grayscale(50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-.inportant-people-section .grid:hover img {
-  -webkit-transform: scale(1.2) rotate(5deg);
-  -ms-transform: scale(1.2) rotate(5deg);
-  transform: scale(1.2) rotate(5deg);
+/* .inportant-people-section .grid:hover img {
+  -webkit-transform: scale(1.05) rotate(5deg);
+  -ms-transform: scale(1.05) rotate(5deg);
+  transform: scale(1.05) rotate(5deg);
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   -o-filter: grayscale(0);
   -ms-filter: grayscale(0);
   filter: grayscale(0);
-}
+} */
 
 .inportant-people-section .grid .details {
-  background: #fff;
-  border: 1px solid #f3f2f2;
-  padding: 30px 15px 25px;
+  padding: 16px 0;
   text-align: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3072,9 +3086,9 @@ a:focus {
   }
 }
 
-.inportant-people-section .grid:hover .details {
+/* .inportant-people-section .grid:hover .details {
   background-color: rgba(94, 154, 142, 0.05);
-}
+} */
 
 .inportant-people-section .grid .details h3 {
   font-size: 19px;
@@ -3205,7 +3219,7 @@ a:focus {
 }
 
 .gallery-section .masonry-gallery .grid {
-  width: 33.33%;
+  width: 25%;
   float: left;
   padding: 0 7.5px 15px;
 }
