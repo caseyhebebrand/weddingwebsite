@@ -1458,6 +1458,10 @@ a:focus {
   text-shadow: 1px 1px 2px #999999;
 }
 
+.header-style-1 .couple-logo h1 a, .header-style-2 .couple-logo h1 a{
+  margin: 0 4px;
+}
+
 @media (max-width: 991px) {
   .header-style-1 .couple-logo h1, .header-style-2 .couple-logo h1 {
     font-size: 30px;
@@ -1726,12 +1730,12 @@ a:focus {
   /*** popup save the date circle ***/
 }
 
-.hero .wedding-announcement .couple-name-merried-text {
+.hero .wedding-announcement .couple-name-married-text {
   display: table-cell;
   vertical-align: middle;
 }
 
-.hero .wedding-announcement .couple-name-merried-text h2 {
+.hero .wedding-announcement .couple-name-married-text h2 {
   font-family: "Great Vibes", cursive;
   font-size: 90px;
   font-size: 5rem;
@@ -1742,18 +1746,41 @@ a:focus {
 }
 
 @media (max-width: 1199px) {
-  .hero .wedding-announcement .couple-name-merried-text h2 {
+  .hero .wedding-announcement .couple-name-married-text h2 {
     font-size: 70px;
     font-size: 3.88889rem;
   }
 }
 
 @media (max-width: 991px) {
-  .hero .wedding-announcement .couple-name-merried-text h2 {
+  .hero .wedding-announcement .couple-name-married-text h2 {
     font-size: 55px;
     font-size: 3.05556rem;
   }
 }
+
+.hero .wedding-announcement .couple-name-married-text .married-location h4 {
+  font-family: "Great Vibes", cursive;
+  font-size: 26px;
+  font-size: calc-rem-value(26);
+  color: #fff;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 1199px) {
+  .hero .wedding-announcement .couple-name-married-text .married-location h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .wedding-announcement .couple-name-married-text .married-location h4 {
+    font-size: 17px;
+  }
+}
+
 
 .hero .wedding-announcement .married-text h4 {
   font-size: 26px;
@@ -1792,12 +1819,12 @@ a:focus {
   }
 }
 
-.hero .wedding-announcement .couple-name-merried-text h2,
+.hero .wedding-announcement .couple-name-married-text h2,
 .hero .wedding-announcement .married-text h4 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.hero .wedding-announcement .couple-name-merried-text i {
+.hero .wedding-announcement .couple-name-married-text i {
   font-size: 450px;
   color: rgba(94, 154, 142, 0.7);
   position: absolute;
@@ -2634,12 +2661,12 @@ a:focus {
 }
 
 .story-section .story-timeline .text-holder .heart {
-  background-color: #9cc2bb;
+  background-color: #889BAE;
   width: 43px;
   height: 43px;
   line-height: 41px;
   text-align: center;
-  border: 2px solid rgba(94, 154, 142, 0.5);
+  border: 2px solid rgba(136, 155, 174, 0.5);
   position: absolute;
   left: -22px;
   top: -22px;
@@ -2699,6 +2726,10 @@ a:focus {
 
 .story-section .story-timeline img {
   display: inline-block;
+}
+
+.story-sction .img-holder {
+  width: 300px;
 }
 
 .story-section .video-holder {
@@ -3041,6 +3072,8 @@ a:focus {
 .inportant-people-section .grid .img-holder {
   overflow: hidden;
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 .inportant-people-section .grid .img-holder img {
@@ -3078,6 +3111,7 @@ a:focus {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+  width: 200px;
 }
 
 @media (max-width: 991px) {

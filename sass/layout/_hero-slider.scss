@@ -142,12 +142,12 @@
 	text-align: center;
 	display: table;
 
-	.couple-name-merried-text {
+	.couple-name-married-text {
 		display: table-cell;
 		vertical-align: middle;
 	}
 
-	.couple-name-merried-text h2 {
+	.couple-name-married-text h2 {
 	    font-family: $heading-font;
 		font-size: 90px;
 		font-size: calc-rem-value(90);
@@ -198,12 +198,12 @@
 		}
 	}
 
-	.couple-name-merried-text h2,
+	.couple-name-married-text h2,
 	.married-text h4 {
 		text-shadow: 1px 1px 2px transparentize($black, 0.4);
 	}
 
-	.couple-name-merried-text i {
+	.couple-name-married-text i {
 		font-size: 450px;
 	    color: transparentize($theme-primary-color, 0.3);
 	    position: absolute;
