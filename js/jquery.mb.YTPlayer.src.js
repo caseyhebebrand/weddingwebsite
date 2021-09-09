@@ -298,7 +298,8 @@ var getYTPVideoID = function( url ) {
 					left: 0,
 					top: 0,
 					overflow: "hidden",
-					opacity: 0
+					opacity: 0,
+          transition: "none"
 				} );
 
 				var playerBox = jQuery( "<div/>" ).attr( "id", playerID ).addClass( "playerBox" );

@@ -651,7 +651,7 @@
     if ($(".particleground").length) {
         $('.particleground').particleground({
             dotColor: "#78c1b3",
-            lineColor: "#889BAE",
+            lineColor: "#748A9E",
             lineWidth: 0.7,
             particleRadius: 6
 
