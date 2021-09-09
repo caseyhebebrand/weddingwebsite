@@ -2435,6 +2435,7 @@ a:focus {
 --------------------------------------------------------------*/
 .count-down-section {
   position: relative;
+  height: 400px;
 }
 
 .count-down-section:before {
@@ -2448,9 +2449,9 @@ a:focus {
 }
 
 .count-down-section h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Dosis", sans-serif;
   font-size: 72px;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   margin: 0;
 }
@@ -2458,14 +2459,14 @@ a:focus {
 @media (max-width: 1199px) {
   .count-down-section h2 {
     font-size: 62px;
-    font-size: 3.44444rem;
+    font-size: 2.44444rem;
   }
 }
 
 @media (max-width: 767px) {
   .count-down-section h2 {
     font-size: 50px;
-    font-size: 2.77778rem;
+    font-size: 1.77778rem;
   }
 }
 
@@ -2506,8 +2507,10 @@ a:focus {
 }
 
 .count-down-section #clock > div {
-  background: rgba(255, 255, 255, 0.9);
-  width: 23.5%;
+  font-family: sans-serif;
+  background: rgba(143, 146, 148, 0.5);
+  color: white;
+  width: 22%;
   float: left;
   text-align: center;
   padding: 15px;
@@ -2516,7 +2519,6 @@ a:focus {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 767px) {
@@ -2541,30 +2543,26 @@ a:focus {
 }
 
 .count-down-section #clock .box > div {
-  font-size: 40px;
-  font-size: 2.22222rem;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 300;
   line-height: 1em;
 }
 
 @media (max-width: 1199px) {
   .count-down-section #clock .box > div {
-    font-size: 35px;
-    font-size: 1.94444rem;
+    font-size: 45px;
   }
 }
 
 @media (max-width: 991px) {
   .count-down-section #clock .box > div {
-    font-size: 30px;
-    font-size: 1.66667rem;
+    font-size: 40px;
     line-height: 1.3em;
   }
 }
 
 .count-down-section #clock .box span {
-  font-size: 14px;
-  font-size: 0.77778rem;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
