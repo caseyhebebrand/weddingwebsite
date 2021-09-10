@@ -2743,11 +2743,11 @@ a:focus {
 
 .story-section .story-timeline img {
   display: inline-block;
-  width: 200px;
+  width: 240px;
 }
 
 .story-sction .img-holder {
-  width: 200px;
+  width: 240px;
 }
 
 .story-section .video-holder {
@@ -2875,7 +2875,6 @@ a:focus {
 }
 
 .events-section .event .img-holder {
-  width: 40%;
   float: left;
 }
 
@@ -2886,10 +2885,15 @@ a:focus {
   }
 }
 
+.events-section .event .img-holder img {
+  width: 280px;
+  padding-left: 140px;
+}
+
 .events-section .event .details {
   width: 60%;
   float: left;
-  padding-left: 35px;
+  padding-left: 90px;
 }
 
 @media (max-width: 991px) {
