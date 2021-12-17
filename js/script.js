@@ -323,27 +323,6 @@
         });
     }
 
-
-    /*------------------------------------------
-        = ACTIVE POPUP IMAGE
-    -------------------------------------------*/
-    if ($(".popup-image").length) {
-        $('.popup-image').magnificPopup({
-            type: 'image',
-            zoom: {
-                enabled: true,
-
-                duration: 300,
-                easing: 'ease-in-out',
-                opener: function(openerElement) {
-                    return openerElement.is('img') ? openerElement : openerElement.find('img');
-                }
-            }
-        });
-    }
-
-
-
     /*------------------------------------------
         = FUNCTION FORM SORTING GALLERY
     -------------------------------------------*/
@@ -520,77 +499,6 @@
             }
         });
     }
-    /*------------------------------------------
-        = RSVP FORM SUBMISSION
-    -------------------------------------------*/
-    if ($("#rsvp-form").length) {
-        $("#rsvp-form").validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: "required",
-
-                guest: {
-                    required: true
-                },
-
-                events: {
-                    required: true
-                }
-
-            },
-
-            messages: {
-                name: "Please enter your name",
-                email: "Please enter your email",
-                guest: "Select your number of guest",
-                events: "Select your event list"
-            },
-
-            submitHandler: function (form) {
-                $("#loader").css("display", "inline-block");
-                $.ajax({
-                    type: "POST",
-                    url: "mail.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
-                        }, 3000);
-                    }
-                });
-                return false; // required to block normal submit since you used ajax
-            }
-
-        });
-    }
-
-
-    /*------------------------------------------
-        = TOGGLE MUSUC BIX
-    -------------------------------------------*/
-    if($(".music-box").length) {
-        var musicBtn = $(".music-box-toggle-btn"),
-            musicBox = $(".music-holder");
-
-        musicBtn.on("click", function() {
-            musicBox.toggleClass("toggle-music-box");
-            return false;
-        })
-    }
-
 
     /*------------------------------------------
         = BACK TO TOP
@@ -603,58 +511,6 @@
             return false;
         })
     }
-
-
-    /*------------------------------------------
-        = BLOG MEDIA CAROUSEL
-    -------------------------------------------*/
-    if ($(".media-carousel").length) {
-        $(".media-carousel").owlCarousel({
-            items: 1,
-            smartSpeed: 500,
-            nav: true,
-            navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-            dots: false
-        })
-    }
-
-
-    /*------------------------------------------
-        = WATER RIPPLE
-    -------------------------------------------*/
-    if ($(".ripple").length) {
-        $('.ripple').ripples({
-            resolution: 512,
-            dropRadius: 20, //px
-            perturbance: 0.04,
-        });
-
-        // Automatic drops
-        setInterval(function() {
-            var $el = $('.ripple');
-            var x = Math.random() * $el.outerWidth();
-            var y = Math.random() * $el.outerHeight();
-            var dropRadius = 20;
-            var strength = 0.04 + Math.random() * 0.04;
-
-            $el.ripples('drop', x, y, dropRadius, strength);
-        }, 400);
-    }
-
-
-    /*------------------------------------------
-        = PARTICLE GROUND
-    -------------------------------------------*/
-    if ($(".particleground").length) {
-        $('.particleground').particleground({
-            dotColor: "#78c1b3",
-            lineColor: "#748A9E",
-            lineWidth: 0.7,
-            particleRadius: 6
-
-        });
-    }
-
 
     /*------------------------------------------
         = VIDEO BACKGROUND
@@ -676,17 +532,7 @@
         });
     }
 
-
-    /*------------------------------------------
-        = SURFACE SHADER
-    -------------------------------------------*/
-    if ($(".surface-shader").length) {
-        //$('.surface-shader')
-    }
-
-
-
-     /*==========================================================================
+    /*==========================================================================
         WHEN DOCUMENT LOADING
     ==========================================================================*/
         $(window).on('load', function() {
