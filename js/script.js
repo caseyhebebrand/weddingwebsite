@@ -211,13 +211,6 @@
         }
     }
 
-    function popupSaveTheDateCircle() {
-        var saveTheDateCircle = $(".save-the-date");
-        saveTheDateCircle.addClass("popup-save-the-date");
-    }
-
-
-
     /*------------------------------------------
         = HIDE PRELOADER
     -------------------------------------------*/
@@ -227,10 +220,6 @@
 
                 //active wow
                 wow.init();
-
-                if($(".save-the-date").length) {
-                    popupSaveTheDateCircle();
-                }
 
                 //Active heor slider
                 heroSlider();
